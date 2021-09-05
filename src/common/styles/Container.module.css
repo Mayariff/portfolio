@@ -1,0 +1,17 @@
+.container {
+    border: 1px solid darkblue;
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.title {
+    background-color: rgba(0,0,0,.3);
+    margin: 0 auto 15px;
+    text-align: center;
+}

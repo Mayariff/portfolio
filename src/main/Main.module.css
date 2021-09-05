@@ -1,0 +1,22 @@
+.mainBlock{
+    padding: 50px 0;
+    background-color: #ffebac;
+}
+
+ div .mainContainer{
+    flex-direction: row;
+    justify-content: space-between;
+     align-items: center;
+}
+
+.text {
+    width: 300px;
+    background-color: #ffbb0f;
+}
+
+.photo {
+    width : 300px;
+    height: 400px;
+    background: #ffbb0f url("https://cdn.pixabay.com/photo/2016/11/29/09/42/camera-1868773_1280.jpg") no-repeat center scroll;
+    background-size:cover;
+}
