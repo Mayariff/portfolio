@@ -1,0 +1,44 @@
+@import '../styles/sass/mixins';
+@import '../styles/sass/variables';
+
+.sectionHeading {
+    margin-bottom: 80px;
+    position: relative;
+    text-align: center;
+    h6 {
+        @include text($accentColor,$mainFont,15px,300, 5px);
+        margin-bottom: 5px;
+        text-transform: uppercase;
+    }
+    h3 {
+        @include text($textColor,$mainFont,35px,700, 2px);
+
+        text-shadow: 0 8px rgba(0, 0, 0, 0.10);
+        text-transform: uppercase;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0;
+        margin-inline-end: 0;
+    }
+    span {
+        @include text(transparent,$mainFont,10vw,700, inherrit);
+        position: absolute;
+        bottom: 0;
+        margin: auto;
+        transform: translate(-50%, 0);
+        -webkit-text-stroke: 1px rgba(0, 0, 0, 0.2);
+        opacity: 0.6;
+        white-space: nowrap;
+
+    }
+
+}
+.light{
+    h3 {
+       @include text($backgroundColor,$mainFont,35px,700, 2px);
+        text-shadow: 0 8px rgba(63, 63, 63, 0.42);
+    }
+  span {
+        -webkit-text-stroke: 1px rgba(224, 214, 214, 0.4);
+    }
+}

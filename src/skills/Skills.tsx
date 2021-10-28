@@ -1,17 +1,20 @@
 import React from 'react';
-import s from "./Skills.module.css"
-import style from "../common/styles/Container.module.css"
+import s from "./Skills.module.scss"
+import style from "../common/styles/Container.module.scss"
 import Skill from "./skill/Skill";
+import TitleSector from "../common/TitleForSectors/TitleSector";
+import {faCss3Alt, faReact} from "@fortawesome/free-brands-svg-icons";
+import {faFileCode} from "@fortawesome/free-solid-svg-icons";
 
 const Skills = () => {
     return (
-        <div className={s.skillsBlock}>
+        <div className={s.skillsBlock} id={`skills`}>
         <div className={style.container}>
-                <h2 className={style.title}>СКИЛЛЫ</h2>
+            <TitleSector titleDiscription={"basic stack technologies"} title={'My skills'} />
                 <div className={s.skills}>
-                    <Skill title={"JS"} discription={"tyutyu tyuyu tutryuty rhrvrglkj1"}/>
-                    <Skill title={"CSS"} discription={"kgkhgjrlkj2"}/>
-                    <Skill title={"HTML"} discription={"kgkhgjrlkj3"}/>
+                    <Skill title={" REACT"} iconName={faReact} discription={"tyutyu tyuyu tutryuty rhrvrglkj1"}/>
+                    <Skill title={"HTML"} iconName={faFileCode} discription={"kgkhgjrlkj2"}/>
+                    <Skill title={"CSS"} iconName={faCss3Alt} discription={"kgkhgjrlkj3"}/>
                 </div>
 
             </div>

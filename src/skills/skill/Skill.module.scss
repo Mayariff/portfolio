@@ -1,0 +1,24 @@
+@import '../../common/styles/sass/mixins';
+
+.skill{
+    @include flexStyle(column, inherit, center);
+    width: 250px;
+    text-align: left;
+    border: 2px solid #ebeff5;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    padding: 42px 30px;
+    transition-duration: 0.4s;
+    .icon{
+        display: flex;
+        width: 60px;
+        height: 60px;
+        color: #75dab4;
+        font-size: 14px;
+        margin: 0 auto 60px;
+    }
+    .discription{
+        box-sizing: border-box;
+        padding: 0 5px 2px;
+    }
+}

@@ -1,0 +1,17 @@
+@import '../common/styles/sass/mixins';
+@import '../common/styles/sass/variables';
+
+.projectsBlock {
+    padding: 50px 0;
+    border-color: $accentColor;
+    .projects {
+        border: 1px solid black;
+        width: 100%;
+        @include flexStyle(row,space-between, inherit);
+
+        @media screen and (max-width: 1110px){
+            justify-content: center;
+        }
+    }
+}
+

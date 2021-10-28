@@ -1,0 +1,27 @@
+@import '../../common/styles/sass/mixins';
+@import '../../common/styles/sass/variables';
+
+.nav {
+   @include flexStyle(row,space-between,center);
+   padding-left: 0;
+   margin-bottom: 0;
+   border: 1px solid;
+   height: 50%;
+
+   @media screen and (max-width: 470px){
+      justify-content: center;
+   }
+   .navLink{
+      @include text($colorforMain,inherit,12px,500,inherit);
+      padding: 13px 7px;
+      margin: 10px 15px;
+      background-color: transparent;
+      @media screen and (max-width: 490px) {
+         padding: 0;
+         margin: 5px 15px;
+      }
+      &:active{
+         color: $accentColor;
+      }
+   }
+}

@@ -1,0 +1,24 @@
+@import '../../common/styles/sass/mixins';
+@import '../../common/styles/sass/variables';
+
+.contactForm {
+    padding-top: 8px;
+    border: 1px solid;
+    width: 50%;
+    min-width:250px;
+    @include flexStyle(column,inherit,inherit);
+    text-align: center;
+    box-sizing: border-box;
+    .sector{
+        box-sizing: border-box;
+        .formSuccess{
+            display: block;
+            white-space: normal;
+            box-sizing: border-box;
+            margin: 15px 0 0 0;
+            @include text($primaryColor,$mainFont,14px,300,2px);
+            line-height: 2;
+        }
+    }
+}
+

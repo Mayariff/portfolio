@@ -1,0 +1,13 @@
+@import '../common/styles/sass/mixins';
+.remoteWorkBlock{
+    padding: 50px 0;
+    background: #ffebac no-repeat center scroll;
+    background-size:cover;
+    position: relative;
+    &::before{
+        @include beforeElement(100%, 100%,0);
+        background-color: black;
+        background-size: cover;
+        opacity: 0.65;
+    }
+}

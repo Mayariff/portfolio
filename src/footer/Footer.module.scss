@@ -1,0 +1,27 @@
+@import '../common/styles/sass/mixins';
+@import '../common/styles/sass/variables';
+
+.footer {
+    min-height: 160px;
+    background-color: $footerColor;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    @include flexStyle(row,center,flex-start);
+    .socialContainer {
+        border: 1px solid;
+        width: 50%;
+        max-width: 350px;
+        @include flexStyle(row,space-around, center);
+        @media screen and (max-width: 290px){
+            @include flexStyle(column,center, center);
+        }
+        }
+    .copyright {
+        margin-top: 40px;
+        @include text(#999, $baseFont,12px,400,2px);
+        text-transform: uppercase;
+        text-align:center ;
+    }
+    }
+
+

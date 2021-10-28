@@ -1,17 +1,27 @@
 import React from 'react';
-import s from "./Projects.module.css"
-import style from "../common/styles/Container.module.css"
+import s from "./Projects.module.scss"
+import style from "../common/styles/Container.module.scss"
 import Project from "./progect/Project";
-
+import TitleSector from "../common/TitleForSectors/TitleSector";
+import sotialImg from '../assets/image/tbb.jpg'
+import culcImg from '../assets/image/project-set.jpg'
 
 const Projects = () => {
     return (
-        <div className={s.projectsBlock}>
+        <div className={s.projectsBlock} id={`projects`}>
             <div className={style.container}>
-                <h2 className={style.title}>ПРОЕКТЫ</h2>
+                <TitleSector titleDiscription={'My study projects'} title={"Projects"} />
                 <div className={s.projects}>
-                    <Project title={"Проект 1"} discription={"okbmbom ordvdb fhbrgr rhrt "}/>
-                    <Project title={"Проект 2"} discription={"okbmbom orioborb sfvsvds"}/>
+                    <Project
+                        image={sotialImg}
+                        title={"Проект 1"}
+                        technology={'React'}
+                        discription={"okbmbom ordvdb fhbrgr rhrt "}/>
+                    <Project
+                        image ={culcImg}
+                        title={"Проект 2"}
+                        technology={'React'}
+                        discription={"okbmbom orioborb sfvsvds"}/>
                 </div>
             </div>
         </div>

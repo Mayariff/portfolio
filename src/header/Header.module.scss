@@ -1,0 +1,23 @@
+@import '../common/styles/sass/mixins';
+@import '../common/styles/sass/variables';
+
+.header {
+    @include flexStyle(inherit,inherit,center);
+    padding: .5rem 1rem;
+    border-color: transparent;
+    /*min-height: 80px;*/
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 9;
+    .container {
+        border: 1px solid darkblue;
+        width: 80%;
+        height: 100%;
+        margin: 0 auto;
+        @include flexStyle(row, inherit, center);
+    }
+}
+
+

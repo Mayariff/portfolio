@@ -1,0 +1,75 @@
+@import '../../common/styles/sass/mixins';
+@import '../../common/styles/sass/variables';
+
+.project {
+    border: 1px solid;
+    width: 460px;
+    flex-direction:column;
+    align-items: center;
+    text-align: left;
+    margin-bottom: 30px;
+    .projectImage{
+        height: 300px;
+        width: 100%;
+        background: $primaryColor no-repeat center scroll;
+        background-size:cover;
+
+        @include flexStyle(inherit, center, center);
+        vertical-align: middle;
+        position: relative;
+        filter:contrast(110%) brightness(95%) saturate(105%);
+
+        &::before{
+            @include beforeElement (inherit, inherit, 0);
+            background-color: black;
+            opacity: 0.18;
+        }
+    }
+    .textAboutProject {
+        background-color: #f7f7f7;
+        padding: 30px;
+        position: relative;
+        .button{
+            @include text( $textColor,$mainFont,16px,500, inherit);
+            cursor: pointer;
+            background-color: $accentColor;
+            padding: 5px 15px;
+            position: absolute;
+            top: -17px;
+            right: 15px;
+            margin-bottom: 40px;
+            text-align: center;
+            text-transform: uppercase;
+            display: block;
+        }
+        .titleBlock{
+            display: inline-block;
+            margin-right: 10px;
+            margin-bottom: 20px;
+            letter-spacing: 0.1px;
+            .projectTitle {
+                @include text($textColor,$mainFont,18px,700,inherit);
+                line-height: 1.4;
+                text-align: left;
+                text-transform: uppercase;
+            }
+            .projectTechnology{
+                @include text($accentColor,$mainFont,16px,500,1px);
+                margin-right: 10px;
+                display: inline-block;
+                margin-left: 10px;
+                text-transform: capitalize;
+            }
+        }
+        .projectDescription {
+            font-weight: 700;
+            line-height: 1.4;
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+
+
+
