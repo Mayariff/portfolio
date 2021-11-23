@@ -5,7 +5,6 @@
     padding: 50px 0;
     border-color: $accentColor;
     .projects {
-        border: 1px solid black;
         width: 100%;
         @include flexStyle(row,space-between, inherit);
 

@@ -4,9 +4,8 @@
 .contactsContainer{
     padding: 50px 0;
     .formBlock{
-        border: 1px solid black;
         width: 100%;
-        @include flexStyle(row,space-between,inherit);
+        @include flexStyle(row,space-between,flex-start);
         flex-wrap: nowrap;
         @media screen and (max-width: 790px){
             @include flexStyle(column,center,center);

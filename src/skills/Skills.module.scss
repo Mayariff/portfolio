@@ -3,7 +3,6 @@
 .skillsBlock {
     padding: 50px 0;
     .skills {
-        border: 1px solid black;
         width: 100%;
         @include flexStyle(row, space-around, inherit);
 
