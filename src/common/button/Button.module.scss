@@ -1,22 +1,30 @@
 @import '../styles/sass/mixins';
 @import '../styles/sass/variables';
 
-.SimpleBTN{
-   @include noneBaseStyle();
-    @include text($textColor,$mainFont ,13px, 300, 4px);
-    text-transform: uppercase;
-    display: inline-block;
+.SimpleBTN {
+  @include noneBaseStyle();
+  @include text($textColor, $mainFont, 13px, 300, 4px);
+  text-transform: uppercase;
+  display: inline-block;
 
-    padding: 7px;
-    position: relative;
-    z-index: 1;
-    &::before{
-        background-color: rgba(0, 0, 0, 0.07);
-        @include beforeElement(45%,100%,-1);
-        transition-duration: 0.3s;
-        white-space: nowrap;
-    }
+  padding: 7px;
+  position: relative;
+  z-index: 1;
+
+  &::before {
+    background-color: rgba(0, 0, 0, 0.07);
+    @include beforeElement(45%, 100%, -1);
+    transition-duration: 0.3s;
+    white-space: nowrap;
+  }
+  &:hover::before {
+    @include beforeElement(100%, 100%, -1);
+  }
+  &:active{
+    background-color: rgba(0, 0, 0, 0.075)
+  }
 }
+
 .light{
     background-color: rgba(252, 250, 250, 0.1);
     color: #fff;

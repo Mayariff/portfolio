@@ -9,6 +9,10 @@
     margin-bottom: 30px;
     padding: 42px 30px;
     transition-duration: 0.4s;
+    &:hover {
+    border-color: #ffffff;
+    box-shadow: 0 20px 40px rgba(35, 38, 125, 0.1);
+}
     .icon{
         display: flex;
         color: #75dab4;

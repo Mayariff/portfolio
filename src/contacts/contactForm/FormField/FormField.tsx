@@ -8,6 +8,7 @@ export const FormField = (props:any) => {
                  type={props.fieldType}
                    name={props.name}
                    id={props.name}
+                   value={props.value}
                    required={props.required}
                    autoFocus={true}
                    placeholder={props.name}/>
@@ -19,12 +20,14 @@ export const FormTextAria= (props:any) => {
         <div className={s.contactField}>
             <textarea className={s.fieldStyle}
                      name={props.name}
+                      value={props.name}
                       id={props.name}
                       autoFocus={true}
                       placeholder={props.name}
                       rows={10} cols={30}
-                      required={true}>
-               {props.name}
+                      required={true}
+            onChange={()=>{}}>
+               {props.value}
             </textarea>
         </div>
     );

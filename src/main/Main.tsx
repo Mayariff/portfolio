@@ -15,7 +15,7 @@ const Main = () => {
                     <div className={s.text}>
                         <h6> Hello, I'm</h6>
                         <h1>Mayya<br/> Devyatkova</h1>
-                        <h4>Frontend developer</h4>
+                        <h4>Frontend <br/> developer</h4>
                         <div className={s.textBTN}>
                             <a href={'contact'} className={s.BTN}>Contact me</a>
                         </div>

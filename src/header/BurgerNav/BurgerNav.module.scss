@@ -1,0 +1,78 @@
+@import '../../common/styles/sass/mixins';
+@import '../../common/styles/sass/variables';
+
+.burgerNav {
+  width: 100%;
+  height: 100%;
+
+  @media screen and (min-width: 400px) {
+    display: none;
+  }
+
+  .burgerNavItems {
+    @include flexStyle(column, space-between, left);
+    flex-wrap: nowrap;
+    padding: 0 10px;
+    position: absolute;
+    top: 10px;
+    left: 55px;
+    height: 0;
+    transform: translate(0, -150px);
+    transition: 0.7s;
+    .navLink {
+      @include text($colorforMain, inherit, 12px, 500, inherit);
+      padding: 0;
+      margin: 0;
+      background-color: transparent;
+
+      &:active {
+        color: $accentColor;
+      }
+    };
+  }
+
+  .show {
+    transform: translate(0, 0);
+    transition: 0.7s;
+    height: 90px;
+  }
+;
+  .burgerBtm {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 10px;
+    left: 24px;
+    display: block;
+    span {
+      @include burger();
+      top: 16px;
+    } ;
+    &::after {
+      @include burger();
+      content: '';
+      bottom: 5px;
+    } ;
+    &::before {
+      @include burger();
+      content: '';
+      top: 5px;
+    }
+  };
+  & .openMenu{
+    span {
+      opacity:0;
+      transition: 0.5s;
+    } ;
+    &::after {
+      transform: rotate(-38deg);
+      bottom: 16px;
+      transition: 0.4s;
+    } ;
+    &::before {
+      transform: rotate(38deg);
+      top: 16px;
+      transition: 0.4s;
+    }
+  }
+}

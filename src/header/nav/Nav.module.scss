@@ -3,22 +3,19 @@
 
 .nav {
    @include flexStyle(row,space-between,center);
-   padding-left: 0;
+   padding-left: 30px;
    margin-bottom: 0;
    height: 50%;
+   flex-wrap: nowrap;
 
-   @media screen and (max-width: 470px){
-      justify-content: center;
+   @media screen and (max-width: 400px){
+      display: none;
    }
    .navLink{
       @include text($colorforMain,inherit,12px,500,inherit);
-      padding: 13px 7px;
+      padding: 13px 7px ;
       margin: 10px 15px;
       background-color: transparent;
-      @media screen and (max-width: 490px) {
-         padding: 0;
-         margin: 5px 15px;
-      }
       &:active{
          color: $accentColor;
       }

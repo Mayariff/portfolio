@@ -1,10 +1,10 @@
-import React from 'react';
+import React  from 'react';
 import s from "./Skill.module.scss"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 
-const Skill = (props:any) => {
 
+const Skill = (props:any) => {
 
     return (
         <div className={s.skill}>

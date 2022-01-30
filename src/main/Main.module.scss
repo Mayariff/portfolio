@@ -47,7 +47,7 @@
             h1 {
                 @include text($colorforMain,$headerFont,45px,700, inherit);
                 margin-bottom: 5px;
-                @media screen and (max-width: 350px) {
+                @media screen and (max-width: 520px) {
                     font-size: 5vh;
                 }
             }

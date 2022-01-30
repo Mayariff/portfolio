@@ -36,3 +36,11 @@
   flex-wrap: wrap;
   align-content: center;
 }
+
+@mixin burger(){
+  height: 2px;
+  width: 100%;
+  position: absolute;
+  background: $accentColor;
+  margin: 0 auto;
+}
