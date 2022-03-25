@@ -62,17 +62,17 @@
   & .openMenu{
     span {
       opacity:0;
-      transition: 0.5s;
+      transition: 0.7s;
     } ;
     &::after {
       transform: rotate(-38deg);
       bottom: 16px;
-      transition: 0.4s;
+      transition: 0.6s;
     } ;
     &::before {
       transform: rotate(38deg);
       top: 16px;
-      transition: 0.4s;
+      transition: 0.6s;
     }
   }
 }

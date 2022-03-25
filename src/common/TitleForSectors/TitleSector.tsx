@@ -2,6 +2,8 @@ import React from 'react';
 import s from './TitleSector.module.scss'
 
 
+
+
 type propsType ={
     titleDiscription: string
     title: string

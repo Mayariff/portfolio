@@ -8,7 +8,6 @@ const Skill = (props:any) => {
 
     return (
         <div className={s.skill}>
-
             <div className={s.icon}>
             <FontAwesomeIcon icon={props.iconName}  className={`fa-6x`} fixedWidth={true} />
             </div>

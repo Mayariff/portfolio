@@ -3,6 +3,8 @@ import s from "./Main.module.scss"
 import style from "../common/styles/Container.module.scss"
 import avatarImage from "../assets/image/11.jpg"
 
+
+
 const Main = () => {
 
     const  avatar= {
