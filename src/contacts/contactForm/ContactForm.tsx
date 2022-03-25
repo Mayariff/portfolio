@@ -47,7 +47,7 @@ const ContactForm = () => {
 
         onSubmit: async (values: FormValuesType) => {
 
-            axios.post('http://serveremailfromportfolio.herokuapp.com/sendMessage', values).then(()=> console.log('Message be send'))
+            axios.post('https://serveremailfromportfolio.herokuapp.com/sendMessage', values).then(()=> console.log('Message be send'))
             setMessageSend(true)
             formik.resetForm()
             setTimeout(()=>{ setMessageSend(false)},4000)
