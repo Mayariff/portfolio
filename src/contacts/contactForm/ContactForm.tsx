@@ -44,6 +44,7 @@ const ContactForm = () => {
             }
             return errors
         },
+
         onSubmit: async (values: FormValuesType) => {
 
             axios.post('https://serveremailfromportfolio.herokuapp.com/sendMessage', values).then(()=> console.log('Message be send'))
