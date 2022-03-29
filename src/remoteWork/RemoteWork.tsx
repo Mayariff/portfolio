@@ -4,20 +4,12 @@ import s from "./RemoteWork.module.scss"
 import {Button} from "../common/button/Button";
 import TitleSector from "../common/TitleForSectors/TitleSector";
 import removeWork from "../assets/image/removeWork.jpg";
-import {useNavigate} from "react-router-dom";
 
 
 const RemoteWork = () => {
-
-    const navigate= useNavigate()
-
-
     const  removeImg= {
         backgroundImage: `url(${removeWork})`
     }
-
-    const onClickHandler=()=>{navigate('https://t.me/MayaRiff')}
-
     return (
         <div className={s.remoteWorkBlock} style={removeImg} >
             <div className={style.container}>
