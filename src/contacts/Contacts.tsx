@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import style from "../common/styles/Container.module.scss"
 import s from "./contact.module.scss"
 import MyContacts from "./MyContacts/MyContacts";
@@ -7,9 +7,11 @@ import TitleSector from "../common/TitleForSectors/TitleSector";
 
 
 export const Contacts = () => {
+
+
     return (
-        <div className={s.contactsContainer}>
-            <div className={style.container} id={'contacts'}>
+        <div className={s.contactsContainer} id={'contacts'}  >
+            <div className={style.container} >
                 <TitleSector titleDiscription={"Contact me"} title={"Contacts"} />
                 <div className={s.formBlock}>
                     <MyContacts/>

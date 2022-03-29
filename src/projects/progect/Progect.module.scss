@@ -41,6 +41,10 @@
             text-align: center;
             text-transform: uppercase;
             display: block;
+            &:active{
+                background-color: $primaryColor;
+                color: $colorforMain;
+            }
         }
         .titleBlock{
             display: inline-block;
@@ -52,6 +56,9 @@
                 line-height: 1.4;
                 text-align: left;
                 text-transform: uppercase;
+                .accent{
+                    color: $primaryColor;
+                }
             }
             .projectTechnology{
                 @include text($accentColor,$mainFont,16px,500,1px);
@@ -62,10 +69,11 @@
             }
         }
         .projectDescription {
-            font-weight: 700;
+            @include text($primaryColor,inherit,10px,300,inherit);
             line-height: 1.4;
             font-size: 18px;
             margin-bottom: 20px;
+            text-align: justify;
         }
     }
 }

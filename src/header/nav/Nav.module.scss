@@ -7,7 +7,6 @@
    margin-bottom: 0;
    height: 50%;
    flex-wrap: nowrap;
-
    @media screen and (max-width: 400px){
       display: none;
    }
@@ -16,6 +15,9 @@
       padding: 13px 7px ;
       margin: 10px 15px;
       background-color: transparent;
+      &:hover{
+         color: $accentColor;
+      }
       &:active{
          color: $accentColor;
       }

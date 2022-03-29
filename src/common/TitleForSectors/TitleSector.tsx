@@ -8,6 +8,7 @@ type propsType ={
     titleDiscription: string
     title: string
     light?: boolean
+    id?:string
 }
 
 const TitleSector = (props: propsType) => {

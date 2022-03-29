@@ -5,6 +5,11 @@ import avatarImage from "../assets/image/11.jpg"
 
 
 
+
+
+
+
+
 const Main = () => {
 
     const  avatar= {
@@ -19,7 +24,7 @@ const Main = () => {
                         <h1>Mayya<br/> Devyatkova</h1>
                         <h4>Frontend <br/> developer</h4>
                         <div className={s.textBTN}>
-                            <a href={'contact'} className={s.BTN}>Contact me</a>
+                            <a href={"#contacts"} className={s.BTN} >Contact me</a>
                         </div>
                     </div>
             </div>

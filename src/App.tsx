@@ -10,16 +10,17 @@ import {Contacts} from "./contacts/Contacts";
 
 
 
+
 function App() {
   return (
     <div className={".App"}>
-      <Header />
-        <Main />
-        <Skills />
-        <Projects />
-      <RemoteWork />
-        <Contacts />
-        <Footer />
+            <Header />
+            <Main />
+            <Skills />
+            <Projects />
+            <RemoteWork />
+            <Contacts />
+            <Footer />
     </div>
   );
 }

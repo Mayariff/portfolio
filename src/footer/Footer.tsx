@@ -5,6 +5,7 @@ import {faLinkedinIn} from "@fortawesome/free-brands-svg-icons/faLinkedinIn";
 import SocialIcon from "./socialIcons/SocialIcons";
 import {faInstagram} from "@fortawesome/free-brands-svg-icons/faInstagram";
 import { faVk } from '@fortawesome/free-brands-svg-icons';
+import {faTelegram} from "@fortawesome/free-brands-svg-icons/faTelegram";
 
 
 
@@ -16,9 +17,10 @@ const Footer = () => {
 
             <div className={style.container}>
                 <div className={s.socialContainer}>
-                    <SocialIcon link={'#'} icon={faLinkedinIn}/>
-                    <SocialIcon link={'#'} icon={faInstagram}/>
-                    <SocialIcon link={'#'} icon={faVk}/>
+                    <SocialIcon link={'https://www.linkedin.com/in/mayya-devyatkova-96ab74235/'} icon={faLinkedinIn}/>
+                    <SocialIcon link={'https://www.instagram.com/mayyariff/?utm_source=qr'} icon={faInstagram}/>
+                    <SocialIcon link={'https://vk.com/mayariff'} icon={faVk}/>
+                    <SocialIcon link={'https://t.me/MayaRiff'} icon={faTelegram} />
                 </div>
                 <span className={s.copyright} >&#169;2021 ALL RIGHTS RESERVED.</span>
             </div>

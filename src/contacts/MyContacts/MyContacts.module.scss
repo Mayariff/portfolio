@@ -3,12 +3,12 @@
 
 .contactDetales {
     box-sizing: border-box;
-    width: 40%;
+    width: 34%;
     min-width: 200px;
     max-width: 450px;
     border: 8px solid $accentColor;
     margin: 0 0 30px;
-    padding: 60px 30px;
-    @include flexStyle(column,space-between,center);
+    padding: 52px 30px;
+    @include flexStyle(column,space-between,left);
     align-content: flex-start;
 }

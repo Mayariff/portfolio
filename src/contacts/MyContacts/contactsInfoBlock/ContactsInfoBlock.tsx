@@ -1,10 +1,18 @@
 import React from 'react';
 import s from "./ContactsInfoBlock.module.scss";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {IconProp} from "@fortawesome/fontawesome-svg-core";
 
-const ContactsInfoBlock = (props: any) => {
+export type contactsType={
+    icon: IconProp
+    nameAddressBlock: string
+    contactDetails: string
+    id?:string
+}
+
+const ContactsInfoBlock = (props: contactsType) => {
     return (
-        <div className={s.singleAdress}>
+        <div className={s.singleAddress}>
             <h6>
                 <span>
                     <FontAwesomeIcon
@@ -13,7 +21,7 @@ const ContactsInfoBlock = (props: any) => {
                     fixedWidth={true}
                     />
                 </span>
-                {props.nameAdressBlock}:</h6>
+                {props.nameAddressBlock}:</h6>
             <span> {props.contactDetails}</span>
         </div>
     );

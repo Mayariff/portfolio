@@ -1,13 +1,14 @@
 @import '../../../common/styles/sass/mixins';
 @import '../../../common/styles/sass/variables';
 
-.singleAdress{
+.singleAddress{
     &:not(:last-child) {
         margin-bottom: 40px;
     }
     span{
         @include text($primaryColor,inherit,15px,300, inherit);
         line-height: 1.8;
+        word-break: break-word;
     }
     h6{
         @include text(#0c0f16, $mainFont,14px,700,2px);

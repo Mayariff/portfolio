@@ -6,7 +6,7 @@
     border-color: $accentColor;
     .projects {
         width: 100%;
-        @include flexStyle(row,space-between, inherit);
+        @include flexStyle(row,space-between, flex-start);
 
         @media screen and (max-width: 1110px){
             justify-content: center;
