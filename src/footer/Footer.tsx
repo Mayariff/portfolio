@@ -17,8 +17,8 @@ const Footer = () => {
 
             <div className={style.container}>
                 <div className={s.socialContainer}>
-                    <SocialIcon link={'https://www.linkedin.com/in/mayya-devyatkova-96ab74235/'} icon={faLinkedinIn}/>
-                    <SocialIcon link={'https://www.instagram.com/mayyariff/?utm_source=qr'} icon={faInstagram}/>
+                    <SocialIcon link={'https://www.linkedin.com/in/mayariff/'} icon={faLinkedinIn}/>
+                    <SocialIcon link={'https://www.instagram.com/mayyariff/'} icon={faInstagram}/>
                     <SocialIcon link={'https://vk.com/mayariff'} icon={faVk}/>
                     <SocialIcon link={'https://t.me/MayaRiff'} icon={faTelegram} />
                 </div>
