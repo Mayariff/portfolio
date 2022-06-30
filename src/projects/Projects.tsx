@@ -31,19 +31,19 @@ const Projects = () => {
         {
             title: "To Do List",
             technology: 'React & Redux',
-            demo: 'https://mayariff.github.io/Cards/',
+            demo: 'https://mayariff.github.io/my-to-do/',
             showCode: 'https://github.com/Mayariff/my-to-do',
             image: officeIMG,
             description: "The application is made for learning through the game. Cards are assigned a rating, which affects how often the card will be shown to you. Create your own cards or learn packs from other users.",
             id: '3',
         },
         {
-            title: "Counter",
+            title: "CОNTACTLIST",
             technology: 'React & Redux',
-            demo: 'https://mayariff.github.io/new_counter/',
-            showCode: 'https://github.com/Mayariff/new_counter',
+            demo: 'https://github.com/Mayariff/testTask',
+            showCode: 'https://github.com/Mayariff/testTask',
             image: calculatorIMG,
-            description: "This is a counter that was written as a simple business process model to show  interaction in CRM. Counter increments values from min to max, which you can assign in the settings.",
+            description: "This is a counter that was written as a simple business process model to show interaction in CRM. Counter increments values from min to max, which you can assign in the settings.",
             id: '4',
         }
     ]
